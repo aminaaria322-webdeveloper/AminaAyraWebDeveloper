@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Google Fonts Link for Open Sans -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <title>My Portfolio - ZyraStackTech</title>
+  
+    <link rel="stylesheet" href="CSS/style.css">
+
+    <!-- Premium Dark Portfolio System Style -->
+    <style>
+        .portfolio-immersive-bg {
+            background-color: #061626 !important;
+            color: #ffffff !important;
+            padding: 90px 0 !important;
+            width: 100% !important;
+            display: inline-block !important;
+            font-family: 'Open Sans', sans-serif;
+            box-sizing: border-box;
+        }
+        .portfolio-immersive-bg .section-subtitle {
+            font-size: 16px;
+            color: #cbd5e0;
+            text-align: center;
+            margin-bottom: 10px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+        .portfolio-immersive-bg .section-title {
+            font-size: 42px;
+            font-weight: 800;
+            color: #ffffff;
+            margin-bottom: 50px;
+            text-align: center;
+        }
+        .portfolio-immersive-bg .cyan-neon-text {
+            color: #00e5ff !important;
+        }
+        
+        /* Premium 4-Column Project Grid Setup */
+        .portfolio-grid {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+            max-width: 1300px;
+            margin: 0 auto;
+            padding: 0 15px;
+        }
+        .portfolio-card-premium {
+            background: #122232 !important;
+            border: 1px solid #233547 !important;
+            border-radius: 8px;
+            overflow: hidden;
+            flex: 1 1 calc(25% - 20px); /* Exactly 4 projects per row on desktop */
+            min-width: 280px;
+            box-sizing: border-box;
+            transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+        }
+        .portfolio-card-premium:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 10px 25px rgba(0, 229, 255, 0.2);
+            border-color: #00e5ff !important;
+        }
+        
+        /* Image Preview Box Configuration */
+        .portfolio-img-holder {
+            width: 100%;
+            height: 180px;
+            overflow: hidden;
+            border-bottom: 1px solid #233547;
+            background: #1b2e3f;
+        }
+        .portfolio-img-holder img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.5s ease;
+        }
+        .portfolio-card-premium:hover .portfolio-img-holder img {
+            transform: scale(1.08);
+        }
+
+        /* Details & Content Typography */
+        .portfolio-details {
+            padding: 20px 15px;
+            text-align: center;
+        }
+        .portfolio-details h3 {
+            color: #ffffff !important;
+            font-size: 18px;
+            font-weight: 700;
+            margin-bottom: 6px;
+            margin-top: 0;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+        .portfolio-details .project-tech-tag {
+            color: #00e5ff !important;
+            font-size: 13px;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            display: inline-block;
+            margin-bottom: 15px;
+        }
+        
+        /* Miniature Action View Link */
+        .view-project-link {
+            display: inline-block;
+            color: #ffffff !important;
+            border: 1px solid #233547;
+            padding: 6px 16px;
+            border-radius: 4px;
+            font-size: 13px;
+            text-decoration: none;
+            font-weight: 600;
+            background: #1b2e3f;
+            transition: all 0.3s ease;
+        }
+        .portfolio-card-premium:hover .view-project-link {
+            border-color: #00e5ff;
+            background: rgba(0, 229, 255, 0.1);
+            color: #00e5ff !important;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- ...Header... -->
+    <header>
+        <div class="logo">
+            <img src="images/logo.png" alt="ZyraStack Tech" height="120">
+        </div>
+        <nav>
+            <div class="nav-links" id="navLinks">
+                <i class="fas fa-times" onclick="hideMenu()"></i>
+                <ol>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="About .html">About</a></li>
+                    <li><a href="My Services.html">Services</a></li>
+                    <li><a href="My Protflio.html">My Protflio</a></li>
+                    <li><a href="Contact Us.html">Contact Us</a></li>
+                </ol>
+            </div>
+            <i class="fa-solid fa-bars" onclick="showMenu()"></i>
+        </nav>
+    </header>
+    <!-- ...Header... -->
+    
+    <!-- ==================== IMMERSIVE PORTFOLIO SHOWCASE ==================== -->
+    <section class="portfolio-immersive-bg">
+        <p class="section-subtitle">My Portfolio</p>
+        <h2 class="section-title">My <span class="cyan-neon-text">Projects</span></h2>
+        
+        <div class="portfolio-grid"
+            
+            <!-- C2: Project 2 (Wix) -->
+            <div class="portfolio-card-premium">
+                <div class="portfolio-img-holder">
+                    <img src="images/C3.jpg" alt="Project 2 Premium Site">
+                </div>
+                <div class="portfolio-details">
+                    <h3>Luxury Haven</h3>
+                    <span class="project-tech-tag">Wix Ecosystem</span>
+                    <div>
+                        <a href="https://aminaaria322.wixsite.com/elite-haven-realty" target="_blank" class="view-project-link">View Live <i class="fa-solid fa-arrow-up-right-from-square" style="font-size: 10px;"></i></a>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- C3: Cleaning Fairy (Wix) -->
+            <div class="portfolio-card-premium">
+                <div class="portfolio-img-holder">
+                    <img src="images/C1.jpg" alt="Cleaning Fairy Services">
+                </div>
+                <div class="portfolio-details">
+                    <h3>Cleaning Fairy</h3>
+                    <span class="project-tech-tag">Wix Ecosystem</span>
+                    <div>
+                        <a href="https://aminaaria322.wixsite.com/cleaning-fairy" target="_blank" class="view-project-link">View Live <i class="fa-solid fa-arrow-up-right-from-square" style="font-size: 10px;"></i></a>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- C4: Veloura Perfume (Wix) -->
+            <div class="portfolio-card-premium">
+                <div class="portfolio-img-holder">
+                    <img src="images/C2.jpg" alt="Veloura Perfume E-Store">
+                </div>
+                <div class="portfolio-details">
+                    <h3>Veloura Perfume</h3>
+                    <span class="project-tech-tag">Wix Ecosystem</span>
+                    <div>
+                        <a href="https://aminaaria322.wixsite.com/veloura-perfume" target="_blank" class="view-project-link">View Live <i class="fa-solid fa-arrow-up-right-from-square" style="font-size: 10px;"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- C5: Dessert Bar (Wix) -->
+            <div class="portfolio-card-premium">
+                <div class="portfolio-img-holder">
+                    <img src="images/C5.jpg" alt="Dessert Bar Premium Site">
+                </div>
+                <div class="portfolio-details">
+                    <h3>Dessert Bar</h3>
+                    <span class="project-tech-tag">Wix Ecosystem</span>
+                    <div>
+                        <a href="https://aminaaria322.wixsite.com/dessert-bar" target="_blank" class="view-project-link">View Live <i class="fa-solid fa-arrow-up-right-from-square" style="font-size: 10px;"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- C6: Fresh Flowers (Squarespace) -->
+            <div class="portfolio-card-premium">
+                <div class="portfolio-img-holder">
+                    <img src="images/Flower" alt="Fresh Flowers Boutique">
+                </div>
+                <div class="portfolio-details">
+                    <h3>Fresh Flowers Shop</h3>
+                    <span class="project-tech-tag">Squarespace Setup</span>
+                    <div>
+                        <a href="https://daisy-hexahedron-s2wt.squarespace.com/" target="_blank" class="view-project-link">View Live <i class="fa-solid fa-arrow-up-right-from-square" style="font-size: 10px;"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- C7: Aveline Wear Clothing Brand (WordPress) -->
+            <div class="portfolio-card-premium">
+                <div class="portfolio-img-holder">
+                    <img src="images/C7.jpg" alt="Aveline Wear E-Commerce">
+                </div>
+                <div class="portfolio-details">
+                    <h3>Aveline Wear Brand</h3>
+                    <span class="project-tech-tag">WordPress Core</span>
+                    <div>
+                        <a href="https://aminaayramarketer.wordpress.com/" target="_blank" class="view-project-link">View Live <i class="fa-solid fa-arrow-up-right-from-square" style="font-size: 10px;"></i></a>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- C8: Digital Marketing Studio (Squarespace) -->
+            <div class="portfolio-card-premium">
+                <div class="portfolio-img-holder">
+                    <img src="images/C8.jpg" alt="Digital Marketing Architecture">
+                </div>
+                <div class="portfolio-details">
+                    <h3>Marketing Platform</h3>
+                    <span class="project-tech-tag">Squarespace Setup</span>
+                    <div>
+                        <a href="https://tunny-stingray-87fr.squarespace.com/" target="_blank" class="view-project-link">View Live <i class="fa-solid fa-arrow-up-right-from-square" style="font-size: 10px;"></i></a>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- C9: Nova Spark Digital Agency (WordPress) -->
+            <div class="portfolio-card-premium">
+                <div class="portfolio-img-holder">
+                    <img src="images/C9.jpg" alt="Nova Spark Agency">
+                </div>
+                <div class="portfolio-details">
+                    <h3>Nova Spark Agency</h3>
+                    <span class="project-tech-tag">WordPress Core</span>
+                    <div>
+                        <a href="https://novasparkdigitalagency.wordpress.com/" target="_blank" class="view-project-link">View Live <i class="fa-solid fa-arrow-up-right-from-square" style="font-size: 10px;"></i></a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+	
+		
+	<!--start footer-->
+	<footer>
+   <footer class="wireframe-tutorial-footer">
+    <div class="inner-container">
+        
+        <div class="footer-custom-row">
+            
+            <div class="footer-col-3">
+                <h3>Quick Links</h3>
+                <ul class="footer-menu-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="About Us.html">About</a></li>
+                    <li><a href="My Services.html">Services</a></li>
+                    <li><a href="My Protflio.html">Portfolio</a></li>
+                    <li><a href="Contact Us.html">Contact</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-col-3">
+                <h3>Services</h3>
+                <ul class="footer-menu-links">
+                    <li><a href="My Services.html">Web Design</a></li>
+                    <li><a href="My Services.html">Web Development</a></li>
+                    <li><a href="My Services.html">WordPress Development</a></li>
+                    <li><a href="My Services.html">Wix Design</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-col-3">
+                <h3>Our Focus</h3>
+                <ul class="footer-menu-links">
+                    <li><a href="#">Responsive Design</a></li>
+                    <li><a href="#">Clean Coding</a></li>
+                    <li><a href="#">UI/UX Optimization</a></li>
+                    <li><a href="#">SEO Framework</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-col-3 contact-social-pane">
+                <h3>Follow Me</h3>
+                
+                <p><b>Email:</b> <a href="mailto:info@zyrastacktech.com">info@zyrastacktech.com</a></p>
+                <p><b>Location:</b> Punjab, Pakistan</p>
+				<p><b>Whatsapp No: </b>92+325-1106977</p>
+                
+                <div class="social-icons-wrapper">
+                    <a href="https://www.facebook.com/" target="_blank" class="social-icon facebook">F</a>
+                    <a href="https://www.instagram.com/" target="_blank" class="social-icon instagram">I</a>
+                    <a href="https://www.youtube.com/" target="_blank" class="social-icon youtube">Y</a>
+                    <a href="https://www.tiktok.com/" target="_blank" class="social-icon tiktok">T</a>
+                </div>
+            </div>
+            
+        </div> </div>
+</footer>
+
+<div class="base-copyright-strip text-center">
+    <div class="container">
+        <p>&copy; 2026 Amina Aria. All Rights Reserved. | <a href="#">Privacy Policy</a> &bull; <a href="#">Terms & Conditions</a></p>
+    </div>
+</div>
+	
+	
+	</footer>
+
+    <!--...end footer...-->
+
+    <!-- Navigation JS Handler -->
+    <script>
+        var navLinks = document.getElementById("navLinks");
+        function showMenu(){
+            navLinks.style.left = "0";
+        }
+        function hideMenu(){
+            navLinks.style.left = "-200px";
+        }
+    </script>
+</body>
+</html>

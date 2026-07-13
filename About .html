@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <title>About Us - ZyraStackTech</title>
+  
+    <link rel="stylesheet" href="CSS/style.css">
+
+    <style>
+        .about-immersive-bg {
+            background-color: #061626 !important;
+            color: #ffffff !important;
+            padding: 80px 0 !important;
+            width: 100% !important;
+            display: inline-block !important;
+            font-family: 'Open Sans', sans-serif;
+        }
+        .cyan-neon-text {
+            color: #00e5ff !important;
+        }
+        .about-left-img img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+            box-shadow: 0 0 20px rgba(0, 229, 255, 0.15);
+        }
+        .about-right-content h1 {
+            color: #ffffff !important;
+            font-size: 48px;
+            margin-top: 0;
+            margin-bottom: 10px;
+            font-weight: 800;
+        }
+        .about-right-content h2 {
+            color: #ffffff !important;
+            font-size: 36px;
+            margin-top: 30px;
+            margin-bottom: 20px;
+        }
+        .about-right-content h3 {
+            color: #00e5ff !important;
+            font-size: 22px;
+            margin-top: 25px;
+            margin-bottom: 10px;
+            font-weight: 600;
+        }
+        .about-right-content p {
+            color: #cbd5e0 !important;
+            line-height: 1.8;
+            font-size: 15px;
+            margin-bottom: 15px;
+        }
+        .about-right-content ul.skills-list {
+            list-style: none;
+            padding-left: 0;
+            margin-bottom: 25px;
+        }
+        .about-right-content ul.skills-list li {
+            color: #cbd5e0 !important;
+            font-size: 15px;
+            margin-bottom: 10px;
+            position: relative;
+            padding-left: 25px;
+        }
+        .about-right-content ul.skills-list li::before {
+            content: "✔";
+            color: #00e5ff;
+            position: absolute;
+            left: 0;
+            font-weight: bold;
+        }
+        /* Skill tags layout block styling */
+        .skills-grid-box {
+            margin-top: 20px;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+        .skill-tag {
+            background: #122232 !important;
+            color: #00e5ff !important;
+            border: 1px solid #233547 !important;
+            padding: 8px 16px;
+            border-radius: 4px;
+            font-size: 14px;
+            font-weight: 600;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="logo">
+            <img src="images/logo.png" alt="ZyraStack Tech" height="120">
+        </div>
+        <nav>
+            <div class="nav-links" id="navLinks">
+                <i class="fas fa-times" onclick="hideMenu()"></i>
+                <ol>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="About .html">About</a></li>
+                    <li><a href="My Services.html">Services</a></li>
+                    <li><a href="My Protflio.html">My Protflio</a></li>
+                    <li><a href="Contact Us.html">Contact Us</a></li>
+                </ol>
+            </div>
+            <i class="fa-solid fa-bars" onclick="showMenu()"></i>
+        </nav>
+    </header>
+    <section class="about-immersive-bg">
+        <div class="container">
+            <div class="row" style="display: flex; flex-wrap: wrap; align-items: flex-start;">
+                
+                <div class="col-6 about-left-img">
+                    <img src="images/About.jpg" alt="Zyra Stack Tech Portfolio Setup">
+                </div>
+                
+                <div class="col-6 about-right-content" style="padding-left: 40px; box-sizing: border-box;">
+                    <h1>About <span class="cyan-neon-text">Us</span></h1>
+                    
+                    <h3>Zyra Stack Tech</h3>
+                    <p>Zyra Stack Tech is a premium freelance digital agency focused on engineering high-performance, responsive web ecosystems. We seamlessly bridge the gap between creative visual artistry and flawless full-stack code.</p>
+
+                    <h3>Meet Amina Ayra</h3>
+                    <p>Hello, I am <strong>Amina Ayra</strong>—a Digital Architect, Web Developer, and Growth Strategist. With a strong foundation in modern web technologies and digital marketing, my mission is to deliver complete, end-to-end web deployment strategies. From creative UI/UX wireframes to fully custom staging, I engineer digital platforms that convert visitors into loyal customers.</p>
+
+                    <h3>Core Expertise</h3>
+                    <ul class="skills-list">
+                        <li><strong>Custom Web Architecture:</strong> HTML, CSS, JavaScript, & Webflow</li>
+                        <li><strong>CMS Ecosystems:</strong> Advanced WordPress, Wix, & Squarespace Design</li>
+                    </ul>
+
+                    <h2>My Core Skills</h2>
+                    <div class="skills-grid-box">
+                        <div class="skill-tag">Web Development (HTML/CSS)</div>
+                        <div class="skill-tag">WordPress Architecture</div>
+                        <div class="skill-tag">Wix Ecosystem Design</div>
+                        <div class="skill-tag">Squarespace Custom Layouts</div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+	
+	<!--start footer-->
+	<footer>
+   <footer class="wireframe-tutorial-footer">
+    <div class="inner-container">
+        
+        <div class="footer-custom-row">
+            
+            <div class="footer-col-3">
+                <h3>Quick Links</h3>
+                <ul class="footer-menu-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="About Us.html">About</a></li>
+                    <li><a href="My Services.html">Services</a></li>
+                    <li><a href="My Protflio.html">Portfolio</a></li>
+                    <li><a href="Contact Us.html">Contact</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-col-3">
+                <h3>Services</h3>
+                <ul class="footer-menu-links">
+                    <li><a href="My Services.html">Web Design</a></li>
+                    <li><a href="My Services.html">Web Development</a></li>
+                    <li><a href="My Services.html">WordPress Development</a></li>
+                    <li><a href="My Services.html">Wix Design</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-col-3">
+                <h3>Our Focus</h3>
+                <ul class="footer-menu-links">
+                    <li><a href="#">Responsive Design</a></li>
+                    <li><a href="#">Clean Coding</a></li>
+                    <li><a href="#">UI/UX Optimization</a></li>
+                    <li><a href="#">SEO Framework</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-col-3 contact-social-pane">
+                <h3>Follow Me</h3>
+                
+                <p><b>Email:</b> <a href="mailto:info@zyrastacktech.com">info@zyrastacktech.com</a></p>
+                <p><b>Location:</b> Punjab, Pakistan</p>
+				<p><b>Whatsapp No: </b>92+325-1106977</p>
+                
+                <div class="social-icons-wrapper">
+                    <a href="https://www.facebook.com/" target="_blank" class="social-icon facebook">F</a>
+                    <a href="https://www.instagram.com/" target="_blank" class="social-icon instagram">I</a>
+                    <a href="https://www.youtube.com/" target="_blank" class="social-icon youtube">Y</a>
+                    <a href="https://www.tiktok.com/" target="_blank" class="social-icon tiktok">T</a>
+                </div>
+            </div>
+            
+        </div> </div>
+</footer>
+
+<div class="base-copyright-strip text-center">
+    <div class="container">
+        <p>&copy; 2026 Amina Aria. All Rights Reserved. | <a href="#">Privacy Policy</a> &bull; <a href="#">Terms & Conditions</a></p>
+    </div>
+</div>
+	
+	
+	</footer>
+
+    <!--...end footer...-->
+    <script>
+        var navLinks = document.getElementById("navLinks");
+        function showMenu(){
+            navLinks.style.left = "0";
+        }
+        function hideMenu(){
+            navLinks.style.left = "-200px";
+        }
+    </script>
+</body>
+</html>

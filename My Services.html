@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Google Fonts Link for Open Sans -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <title>Our Services - ZyraStackTech</title>
+  
+    <link rel="stylesheet" href="CSS/style.css">
+
+    <!-- Premium Dark Services Dashboard Styling -->
+    <style>
+        .services-immersive-bg {
+            background-color: #061626 !important;
+            color: #ffffff !important;
+            padding: 90px 0 !important;
+            width: 100% !important;
+            display: inline-block !important;
+            font-family: 'Open Sans', sans-serif;
+            box-sizing: border-box;
+        }
+        .services-immersive-bg .section-title {
+            font-size: 42px;
+            font-weight: 800;
+            color: #ffffff;
+            margin-bottom: 50px;
+            text-align: center;
+        }
+        .services-immersive-bg .cyan-neon-text {
+            color: #00e5ff !important;
+        }
+        
+        /* 4-Column Card Grid Framework */
+        .services-grid {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 15px;
+        }
+        .service-card-premium {
+            background: #122232 !important;
+            border: 1px solid #233547 !important;
+            border-radius: 8px;
+            padding: 25px 20px;
+            text-align: center;
+            flex: 1 1 calc(25% - 20px); /* Makes exactly 4 clean columns on desktop */
+            min-width: 250px;
+            box-sizing: border-box;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .service-card-premium:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 8px 25px rgba(0, 229, 255, 0.15);
+            border-color: #00e5ff !important;
+        }
+        
+        /* Premium Icon Settings */
+        .service-card-premium .icon-holder-neon {
+            font-size: 36px;
+            background: rgba(0, 229, 255, 0.05);
+            width: 70px;
+            height: 70px;
+            line-height: 70px;
+            border-radius: 50px;
+            margin: 0 auto 20px auto;
+            display: block;
+            border: 1px solid rgba(0, 229, 255, 0.2);
+        }
+        .service-card-premium h3 {
+            color: #ffffff !important;
+            font-size: 20px;
+            font-weight: 700;
+            margin-bottom: 15px;
+        }
+        .service-card-premium p {
+            color: #cbd5e0 !important;
+            font-size: 14px;
+            line-height: 1.6;
+            margin: 0;
+            text-align: justify;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- ...Header... -->
+    <header>
+        <div class="logo">
+            <img src="images/logo.png" alt="ZyraStack Tech" height="120">
+        </div>
+        <nav>
+            <div class="nav-links" id="navLinks">
+                <i class="fas fa-times" onclick="hideMenu()"></i>
+                <ol>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="About .html">About</a></li>
+                    <li><a href="My Services.html">Services</a></li>
+                    <li><a href="My Protflio.html">My Protflio</a></li>
+                    <li><a href="Contact Us.html">Contact Us</a></li>
+                </ol>
+            </div>
+            <i class="fa-solid fa-bars" onclick="showMenu()"></i>
+        </nav>
+    </header>
+    <!-- ...Header... -->
+    
+    <!-- ==================== IMMERSIVE SERVICES DISPLAY ==================== -->
+    <section class="services-immersive-bg">
+        <h2 class="section-title">Specialized <span class="cyan-neon-text">Services</span></h2>
+        
+        <div class="services-grid">
+            
+            <!-- Service 1: Custom Web Development -->
+            <div class="service-card-premium">
+                <div class="icon-holder-neon">💻</div>
+                <h3>Web Development</h3>
+                <p>Building high-performance native HTML, CSS, and structural JavaScript solutions optimized for semantic clean code and fast load times. Custom HTML and CSS development built completely from scratch for premium speed. Clean, validated code structures ensuring top-notch SEO rankings and lightweight architecture.</p>
+            </div>
+            
+            <!-- Service 2: Wix Web Design -->
+            <div class="service-card-premium">
+                <div class="icon-holder-neon">🎨</div>
+                <h3>Wix Web Design</h3>
+                <p>Crafting fully customized, highly dynamic Wix business platforms mapped specifically to your branding and aesthetic framework. Modern and responsive websites crafted beautifully on Wix. We ensure fluid layout structures and flawless mobile responsiveness tailored for conversion.</p>
+            </div>
+            
+            <!-- Service 3: WordPress Ecosystems -->
+            <div class="service-card-premium">
+                <div class="icon-holder-neon">Ⓜ️</div>
+                <h3>WordPress Development</h3>
+                <p>Deploying robust, easily manageable WordPress ecosystems featuring custom landing systems, blog engines, and secure frameworks. Professional WordPress development tailored to scale your online business growth. Built with high security patches, custom plugin styling, and extreme page speed optimizations.</p>
+            </div>
+            
+            <!-- Service 4: Squarespace Minimalist Layouts -->
+            <div class="service-card-premium">
+                <div class="icon-holder-neon">📐</div>
+                <h3>Squarespace Design</h3>
+                <p>Designing elegant, premium, minimalist Squarespace layouts tailored beautifully for creative studios, boutiques, and agencies. We ensure fluid layout structures and flawless mobile responsiveness tailored for conversion.</p>
+            </div>
+
+        </div>
+    </section>
+
+	
+	<!--start footer-->
+	<footer>
+   <footer class="wireframe-tutorial-footer">
+    <div class="inner-container">
+        
+        <div class="footer-custom-row">
+            
+            <div class="footer-col-3">
+                <h3>Quick Links</h3>
+                <ul class="footer-menu-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="About Us.html">About</a></li>
+                    <li><a href="My Services.html">Services</a></li>
+                    <li><a href="My Protflio.html">Portfolio</a></li>
+                    <li><a href="Contact Us.html">Contact</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-col-3">
+                <h3>Services</h3>
+                <ul class="footer-menu-links">
+                    <li><a href="My Services.html">Web Design</a></li>
+                    <li><a href="My Services.html">Web Development</a></li>
+                    <li><a href="My Services.html">WordPress Development</a></li>
+                    <li><a href="My Services.html">Wix Design</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-col-3">
+                <h3>Our Focus</h3>
+                <ul class="footer-menu-links">
+                    <li><a href="#">Responsive Design</a></li>
+                    <li><a href="#">Clean Coding</a></li>
+                    <li><a href="#">UI/UX Optimization</a></li>
+                    <li><a href="#">SEO Framework</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-col-3 contact-social-pane">
+                <h3>Follow Me</h3>
+                
+                <p><b>Email:</b> <a href="mailto:info@zyrastacktech.com">info@zyrastacktech.com</a></p>
+                <p><b>Location:</b> Punjab, Pakistan</p>
+				<p><b>Whatsapp No: </b>92+325-1106977</p>
+                
+                <div class="social-icons-wrapper">
+                    <a href="https://www.facebook.com/" target="_blank" class="social-icon facebook">F</a>
+                    <a href="https://www.instagram.com/" target="_blank" class="social-icon instagram">I</a>
+                    <a href="https://www.youtube.com/" target="_blank" class="social-icon youtube">Y</a>
+                    <a href="https://www.tiktok.com/" target="_blank" class="social-icon tiktok">T</a>
+                </div>
+            </div>
+            
+        </div> </div>
+</footer>
+
+<div class="base-copyright-strip text-center">
+    <div class="container">
+        <p>&copy; 2026 Amina Aria. All Rights Reserved. | <a href="#">Privacy Policy</a> &bull; <a href="#">Terms & Conditions</a></p>
+    </div>
+</div>
+	
+	
+	</footer>
+
+    <!--...end footer...-->
+    <!-- Navigation JS Handler -->
+    <script>
+        var navLinks = document.getElementById("navLinks");
+        function showMenu(){
+            navLinks.style.left = "0";
+        }
+        function hideMenu(){
+            navLinks.style.left = "-200px";
+        }
+    </script>
+</body>
+</html>

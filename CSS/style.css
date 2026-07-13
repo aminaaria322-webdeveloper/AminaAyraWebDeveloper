@@ -1,0 +1,1031 @@
+  * {
+     background-color: #061626 !important;
+            color: #ffffff !important;
+    margin: 0;
+    padding: 0;
+	font-family:'Open Sans', sans serif;
+    box-sizing: border-box;
+}
+header {
+    display: flex;
+    padding: 15px 6%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo img {
+    height: 70px;
+    width: auto;
+}
+
+.nav-links {
+    flex: 1;
+    text-align: right;
+}
+
+.nav-links ol li {
+    list-style: none;
+    display: inline-block;
+    padding: 8px 20px;
+}
+
+.nav-links ol li a {
+    color: #0B1B4F;
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: 600;
+}
+
+/* FIX: Desktop par dono icons ko complete hide kar diya */
+header .fa-bars, 
+header .fa-times {
+    display: none;
+}
+
+.hero-section {
+    padding: 100px 0 60px 0;
+    overflow: hidden;
+    clear: both;
+    background: #ffffff;
+}
+
+.hero-text-block {
+    text-align: left;
+    padding-right: 40px;
+    box-sizing: border-box;
+}
+
+.greet-text {
+    font-size: 18px;
+    color: #666;
+    margin-bottom: 5px;
+    font-weight: 500;
+}
+
+.brand-title {
+    font-size: 48px;
+    color: #0B1B4F;
+    margin: 0 0 15px 0;
+    font-weight: 700;
+    letter-spacing: -0.5px;
+}
+
+
+.neon-tag {
+    display: inline-block;
+    padding: 8px 20px;
+    background: rgba(0, 229, 255, 0.1);
+    border: 1.5px solid #00e5ff;
+    color: #00e5ff;
+    border-radius: 50px;
+    text-shadow: 0 0 8px #00e5ff;
+    box-shadow: 0 0 12px rgba(0, 229, 255, 0.3);
+    font-weight: 600;
+    letter-spacing: 0.5px;
+}
+.hero-desc {
+    font-size: 15px;
+    color: #555;
+    line-height: 1.7;
+    margin-bottom: 30px;
+}
+
+/* Hero Actions Button Group */
+.hero-btn-group a {
+    text-decoration: none;
+    padding: 12px 25px;
+    font-size: 14px;
+    font-weight: 600;
+    border-radius: 30px;
+    display: inline-block;
+    margin-right: 15px;
+    transition: all 0.3s ease;
+}
+
+.btn-primary {
+    background: #00e5ff;
+    color: white !important;
+    border: 2px solid #00e5ff;
+    font-weight: 700;
+    transition: all 0.3s ease;
+    box-shadow: 0 0 10px rgba(0, 229, 255, 0.4);
+}
+.btn-primary:hover {
+    background: transparent;
+    color: #00e5ff !important;
+    box-shadow: 0 0 20px #00e5ff;
+}
+.btn-primary:active {
+    transform: scale(0.95);
+    background: #00b3c0;
+}
+
+/* Second Button: Let's Talk (Elegant Border with Neon Hover) */
+.btn-secondary {
+     background: transparent;
+    color: #00e5ff !important;
+    text-align: center;
+    text-decoration: none;
+    border: 2px solid #00e5ff;
+    padding: 12px 35px;
+    border-radius: 4px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    display: inline-block;
+}
+.btn-secondary:hover {
+    background: #00e5ff;
+    color: #020b14 !important;
+    box-shadow: 0 0 20px #00e5ff; 
+}
+.btn-secondary:active {
+    transform: scale(0.95);
+}
+
+/* Right Column Image Controls */
+.hero-image-block {
+    box-sizing: border-box;
+}
+
+.hero-banner-img {
+    width: 100%;
+    height: auto;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+}
+
+
+
+
+.heading {
+    margin-top: 50px;
+    margin-bottom: 30px;
+    font-size: 32px;
+    color: #0B1B4F;
+}
+
+/* ==================== ABOUT SECTION GRID FIX ==================== */
+.about-section {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    overflow: hidden; /* Elements ko screen se bahar bikharne se rokne ke liye */
+    clear: both;
+}
+
+/* Global Grid System Setup for Custom Layouts */
+.col-6 {
+    float: left;
+    width: 48%; /* 48% width + 4% gap = 100% split layout */
+    margin-right: 2%;
+    box-sizing: border-box;
+}
+
+/* Last column ka margin clear karne ke liye */
+.row .col-6:last-child {
+    margin-right: 0;
+}
+
+/* Content formatting adjustments */
+.about-content {
+    text-align: left;
+    padding-left: 20px;
+}
+
+.about-content h3 {
+    font-size: 28px;
+    color: #0B1B4F;
+    margin-top: 0;
+    margin-bottom: 15px;
+}
+
+.about-content p {
+    font-size: 14px;
+    color: #333;
+    line-height: 1.6;
+    margin-bottom: 15px;
+    text-align: justify; /* Sides se text aligned rahega */
+}
+.about-section-wrapper {
+    background-color:  #061626!important;
+    color: #0B1B4F;
+    padding: 80px 0;
+}
+
+.about-title-block h5 {
+    color: #00e5ff;
+    font-size: 14px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin: 0 0 10px 0;
+}
+
+.about-title-block h2 {
+    color: #0B1B4F;
+    font-size: 34px;
+    margin: 0 0 40px 0;
+}
+
+.about-img-box img {
+    width: 100%;
+    border-radius: 12px;
+    box-shadow: 0 8px 24px rgba(11,27,79,0.08);
+}
+
+.about-content-box h3 {
+    color: #0B1B4F;
+    font-size: 26px;
+    margin-top: 0;
+}
+
+.about-content-box p {
+    color: #555;
+    line-height: 1.7;
+    font-size: 15px;
+}
+.services-section .col-4 {
+    display: inline-block;
+    vertical-align: top;
+    width: 31%; /* Yeh width teeno cards ko desktop par ek hi line mein arrange kar degi */
+    margin-bottom: 20px;
+    box-sizing: border-box;
+    padding:0  20px;
+}
+.services-section .col-4 {
+    float: left;
+    width: 31%; /* 31% width + margins mil kar perfect 100% space banayenge */
+    margin: 0 1.1%; /* Cards ke beech ka horizontal gap */
+    box-sizing: border-box;
+    padding: 20px 15px;
+    background: #fff; /* Clean white block background */
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05); /* Soft premium shadow effect */
+}
+
+.services-section .col-4 img {
+    width: 100%;
+    height: auto;
+    border-radius: 6px;
+    margin-bottom: 20px;
+    display: block;
+}
+
+.services-section .col-4 p {
+    font-size: 14px;
+    color: black;
+    line-height: 1.6;
+    text-align: justify; /* Text sides se bikhra hua nahi lagega */
+}
+.services-action-wrapper {
+    text-align: center;
+    width: 100%;
+    margin-top: 45px;
+    clear: both;
+}
+.btn-group {
+    background: transparent;
+    color: #00e5ff !important;
+    text-align: center;
+    text-decoration: none;
+    border: 2px solid #00e5ff;
+    padding: 12px 35px;
+    border-radius: 4px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    display: inline-block;
+}
+.btn-group:hover {
+    background: #00e5ff;
+    color: #020b14 !important;
+    box-shadow: 0 0 20px #00e5ff;
+}
+.btn-group:active {
+    transform: scale(0.95);
+}
+/* ==================== AMINA'S LAYOUT FIXES ==================== */
+
+/* Buttons Core Wrapper Configuration */
+.button-center-wrapper {
+    display: block;
+    width: 100%;
+    text-align: center;
+    margin: 40px 0;
+    clear: both; /* Yeh pichle section ke floats ko break karega */
+}
+
+
+/* Services Section: Light Off-White / Grey */
+.services-section-wrapper {
+    background-color: #f8f9fa !important;
+    color: #0B1B4F;
+    padding: 80px 0;
+}
+
+/* Portfolio Section: Clean White */
+.portfolio-section-wrapper {
+    background-color: #ffffff !important;
+    color: #0B1B4F;
+    padding: 80px 0;
+}
+
+/* Home Page Contact Section: Dark Navy Blue (Direct Emphasis Match) */
+.home-contact-section-wrapper {
+    background-color: #061626   !important;
+    color: #ffffff;
+    padding: 80px 0;
+}
+
+/* Text adjustments inside Dark Contact Section */
+.home-contact-section-wrapper h2, 
+.home-contact-section-wrapper h5, 
+.home-contact-section-wrapper p,
+.home-contact-section-wrapper .info-details p {
+    color: #ffffff !important;
+}
+
+.home-contact-section-wrapper .wireframe-form-input {
+    background-color: #ffffff;
+    color: #333333;
+    border: 1px solid #cccccc;
+}
+
+/* Universal Layout Container Classes */
+.wireframe-row-container {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+}
+
+.wireframe-col-6 {
+    flex: 0 0 50%;
+    max-width: 50%;
+    padding: 0 15px;
+    box-sizing: border-box;
+}
+/* Updated Button Styles */
+ .neon-glow-submit {
+            width: 100% !important;
+            padding: 16px;
+            background: #00e5ff !important;
+            border: none !important;
+            border-radius: 4px;
+            color: #061626 !important;
+            font-size: 16px;
+            font-weight: 700;
+            text-transform: uppercase;
+            cursor: pointer;
+            box-shadow: 0 0 15px rgba(0, 229, 255, 0.3);
+        }
+
+/* ==================== WIREFRAME TUTORIAL 4-COLUMN FOOTER SYSTEM ==================== */
+.wireframe-tutorial-footer {
+    background-color:#061626  ; /* Purereplication from tutorial class image snap */
+    padding: 70px 0;
+    color: #ffffff;
+    display: block;
+    clear: both;
+    box-sizing: border-box;
+}
+
+.wireframe-tutorial-footer .inner-container {
+    max-width: 1140px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+/* Base ROW alignment structure matching services row logic */
+.footer-custom-row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+}
+
+/* Standard Column Sizing: col-3 = 25% width for 4 columns */
+.footer-col-3 {
+    flex: 0 0 25%;
+    max-width: 25%;
+    padding: 0 15px;
+    box-sizing: border-box;
+    text-align: left; /* Ensuring left alignment for structure */
+}
+
+/* Footer Typography & Spacing Rules */
+.wireframe-tutorial-footer h3 {
+    font-size: 18px;
+    font-weight: 600;
+    margin-top: 0;
+    margin-bottom: 25px;
+    color: #ffffff;
+}
+
+.footer-menu-links {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-menu-links li {
+    padding: 8px 0; /* Exact matching line spacing from tutorial view */
+}
+
+.footer-menu-links li a {
+    color: rgba(255, 255, 255, 0.85);
+    text-decoration: none;
+    font-size: 14px;
+    transition: color 0.3s ease;
+}
+
+.footer-menu-links li a:hover {
+    color: #00e5ff; /* Sleek cyan response on hover */
+}
+
+/* Contact & Social Interaction Pane Styles */
+.contact-social-pane p {
+    font-size: 13px;
+    color: rgba(255, 255, 255, 0.7);
+    margin-top: 0;
+    margin-bottom: 12px;
+}
+
+.contact-social-pane p a {
+    color: rgba(255, 255, 255, 0.7);
+    text-decoration: none;
+}
+
+.contact-social-pane p a:hover {
+    color: #ffffff;
+}
+
+/* Social Media Glowing Icons Wrapper */
+.social-icons-wrapper {
+    margin-top: 25px;
+    display: flex;
+    gap: 15px; /* Spacing between icons */
+}
+
+.social-icon {
+    width: 34px;
+    height: 34px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%; /* Modern circle shape for texture */
+    font-weight: bold;
+    font-size: 15px;
+    text-decoration: none !important;
+    transition: all 0.3s ease;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+}
+
+.social-icon:hover {
+    transform: translateY(-3px); /* Subtle hover animation */
+}
+
+/* Social Icon Color Palette Matching Brand Context */
+.facebook { background-color: #3b5998; color: #fff; }
+.instagram { background-color: #c13584; color: #fff; }
+.youtube { background-color: #ff0000; color: #fff; }
+.tiktok { background-color: #000000; color: #fff; border: 1px solid rgba(255,255,255,0.2); }
+
+.social-icon.facebook:hover, 
+.social-icon.instagram:hover,
+.social-icon.youtube:hover {
+    box-shadow: 0 0 20px rgba(0, 229, 255, 0.5); /* Cyan glow from brand logo */
+}
+
+/* BASE COPYRIGHT STRIPLINE */
+.base-copyright-strip {
+    background-color: #023047;
+    padding: 20px 0;
+    color: rgba(255, 255, 255, 0.6);
+    font-size: 13px;
+    border-top: 1px solid rgba(255, 255, 255, 0.05);
+    clear: both;
+}
+
+.base-copyright-strip a {
+    color: rgba(255, 255, 255, 0.6);
+    text-decoration: none;
+}
+
+.base-copyright-strip a:hover {
+    color: #ffffff;
+}
+
+/* RESPONSIVE Compatibility for Mobile (Vertical Stack) */
+@media (max-width: 768px) {
+    .footer-col-3 {
+        width: 100% !important;
+        max-width: 100% !important;
+        float: none !important;
+        text-align: center !important;
+        padding: 0;
+        margin-bottom: 30px;
+    }
+    
+    .social-icons-wrapper {
+        justify-content: center;
+    }
+}
+
+/* Absolute Positioning & Base Utility Fixes */
+.text-center {
+    text-align: center !important;
+}
+
+/* Copyright Base Strip Line */
+.copyright-footer-strip {
+    background-color: #1a0033;
+    padding: 20px 0;
+    color: #ffffff;
+    margin-top: 50px;
+    clear: both;
+}
+/* Custom utility tag for text centering */
+.text-center {
+    text-align: center;
+}
+.img-responsive{
+max-width:100%;
+height:auto;
+}
+	.container{
+	padding-left:15px;
+	padding-right:15px;
+	margin-left:auto;
+	margin-right:auto;
+}
+ @media (max-width: 700px) {
+	 
+	 .col-6 {
+        width: 100% !important;
+        float: none !important;
+        margin-right: 0 !important;
+        margin-bottom: 20px;
+    }
+    .about-content {
+        padding-left: 0;
+        text-align: center;
+    }
+	 
+	 .services-section {
+        width: 90%;
+    }
+    
+    /* Mobile par cards ko standard stack kar diya, horizontal nahi */
+    .services-section .col-4 {
+        width: 100% !important;
+        float: none !important;
+        display: block !important;
+        margin-bottom: 30px !important;
+        padding: 0 15px;
+    }
+	.fa-bars {
+		position:absolute;
+		right:10px;
+		top:36px;
+		font-size:22px;
+		color:#0B1B4F;
+	}
+		
+    .hero-section {
+        padding: 50px 0;
+    }
+    .hero-text-block {
+        padding-right: 0;
+        text-align: center;
+        margin-bottom: 40px;
+    }
+    .hero-btn-group a {
+        margin: 5px;
+    }
+.logo {
+    text-align: left;
+ 
+	}
+.logo img {
+        height: 60px !important; /* HTML ki height="120" ko override karke half kar dega */
+        width: auto;
+    }
+.nav-links ol li {
+        display: block;
+        padding: 15px 25px;
+    }
+
+    .nav-links {
+        position: absolute;
+        background: #0B1B4F;
+        height: 100vh;
+        width: 200px;
+        top: 0;
+        left: -200px; /* Hidden state by default */
+        text-align: left;
+        z-index: 15;
+        transition: 0.5s; /* Drawer slide in/out transition */
+    }
+
+    .nav-links ol {
+        padding-top: 60px;
+    }
+
+    .nav-links ol li a {
+        color: #ffffff;
+        font-size: 16px;
+    }
+
+    /* Mobile par Bars Icon active kiya */
+    header .fa-bars {
+        display: block !important;
+        position: absolute;
+        right: 20px;
+        top: 35px;
+        font-size: 24px;
+        color: #0B1B4F;
+        cursor: pointer;
+    }
+
+    /* Mobile par Cross Icon active kiya */
+    .nav-links .fa-times {
+        display: block !important;
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        font-size: 22px;
+        color: #ffffff;
+        cursor: pointer;
+    }
+
+	/* Grid system */
+.col-1 { width: 8.33%; }
+.col-2 { width: 16.66%; }
+.col-3 { width: 25%; }
+.col-4 { width: 33.33%; }
+.col-5 { width: 41.66%; }
+.col-6 { width: 50%; }
+.col-7 { width: 58.33%; }
+.col-8 { width: 66.66%; }
+.col-9 { width: 75%; }
+.col-10 { width: 83.33%; }
+.col-11 { width: 91.66%; }
+.col-12 { width: 100%; }
+/* Grid system */
+
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+[class*="col-"] {
+        width: 100% !important;
+        float: none !important;
+        display: block !important;
+        margin-bottom: 40px !important;
+    }
+
+.container{
+	padding-left:15px;
+	padding-right:15px;
+	margin-left:auto;
+	margin-right:auto;
+}
+@media (min-width: 768px) {
+    .container {
+        width: 750px;
+    }
+}
+
+@media (min-width: 992px) {
+    .container {
+        width: 970px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .container {
+        width: 1170px;
+    }
+/*Grid system */
+.heading{
+	text-align:center;
+}
+.img-responsive{
+max-width:100%;
+height:auto;
+}
+/* ==================== AMINA'S MASTER GRID & BRANDING SYSTEM ==================== */
+
+/* Clearfix helper to prevent element dropping */
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.col-6 {
+    width: 50%;
+    float: left;
+    box-sizing: border-box;
+    padding: 15px;
+}
+
+.col-3 {
+    width: 25%;
+    float: left;
+    box-sizing: border-box;
+    padding: 12px;
+}
+
+/* --- Professional About Section Styling --- */
+
+
+/* --- Fixed Services & Grid Layout --- */
+.services-section-wrapper {
+    padding: 80px 0;
+    background: #ffffff;
+}
+
+.service-card-box {
+    background: #ffffff;
+    border: 1px solid #eef2f5;
+    padding: 30px 20px;
+    border-radius: 8px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.02);
+}
+
+.service-card-box:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(11,27,79,0.08);
+}
+
+.service-card-box .icon {
+    font-size: 36px;
+    margin-bottom: 15px;
+    display: inline-block;
+}
+
+.service-card-box h4 {
+    color: #0B1B4F;
+    font-size: 18px;
+    margin: 0 0 12px 0;
+}
+
+.service-card-box p {
+    color: #666;
+    font-size: 14px;
+    line-height: 1.6;
+    margin: 0;
+}
+.btn-group{
+	background: #0B1B4F ;
+    color:  #fff;
+	text-align: center;
+	text-decoration:none;
+    border: 2px solid #0B1B4F;
+	
+}
+.btn-group:hover {
+    background: #0B1B4F;
+    color: #fff;
+	text-align: center;
+	border-color: #00e5ff;
+	position:center;
+
+
+/* Clean Portfolio Grid System */
+.portfolio-section-clean {
+    padding: 80px 0;
+    font-family: 'Open Sans', sans-serif;
+    background-color: #ffffff; /* Homepage theme ke mutabik badal sakte hain */
+}
+.portfolio-title-block {
+    text-align: center;
+    margin-bottom: 45px;
+}
+.portfolio-title-block p {
+    font-size: 14px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #777;
+    margin-bottom: 5px;
+}
+.portfolio-title-block h2 {
+    font-size: 36px;
+    font-weight: 800;
+    color: #111;
+    margin-top: 0;
+}
+.portfolio-grid-wireframe {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+.portfolio-card-wireframe {
+    background: #ffffff;
+    border: 1px solid #e2e8f0;
+    border-radius: 6px;
+    overflow: hidden;
+    text-align: center;
+    padding-bottom: 20px;
+    transition: transform 0.3s ease;
+}
+.portfolio-card-wireframe:hover {
+    transform: translateY(-5px);
+}
+.portfolio-img-container {
+    width: 100%;
+    height: 200px;
+    background: #f7fafc;
+    border-bottom: 1px solid #e2e8f0;
+}
+.portfolio-img-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.portfolio-meta-info {
+    padding: 20px 15px 10px 15px;
+}
+.portfolio-meta-info h3 {
+    font-size: 18px;
+    font-weight: 700;
+    margin: 0 0 5px 0;
+    color: #2d3748;
+}
+.portfolio-meta-info p {
+    font-size: 14px;
+    color: #718096;
+    margin: 0 0 15px 0;
+}
+.live-link-btn {
+    font-size: 13px;
+    font-weight: 600;
+    color: #3182ce;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+}
+.live-link-btn:hover {
+    text-decoration: underline;
+}
+/* ==================== AMINA'S ELITE DARK MODE CUSTOMIZATION ==================== */
+
+/* 1. Global Section Background Base Override */
+.about-section-wrapper, 
+.home-contact-section-wrapper {
+    background-color: #061626 !important; /* Premium luxury dark blue */
+    padding: 90px 0;
+    display: block;
+    clear: both;
+    box-sizing: border-box;
+    border: none !important; /* Removes unwanted top/bottom lines completely */
+}
+
+/* 2. Heading Beautiful Decoration (Hero Style Matching) */
+.premium-deco-heading {
+    color: #ffffff !important;
+    font-size: 36px;
+    font-weight: 700;
+    position: relative;
+    display: inline-block;
+    margin-bottom: 35px;
+    padding-bottom: 12px;
+}
+
+/* Bottom beautiful neon tracking line decoration */
+.premium-deco-heading::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 60px; /* Custom decorative underline width */
+    height: 3px;
+    background: linear-gradient(90deg, #00e5ff, #ffffff); /* Smooth neon gradient accent */
+    border-radius: 2px;
+}
+
+/* Subtitles or mini tracking heads */
+.premium-sub-badge {
+    color: #00e5ff !important; /* Cyan pop highlight */
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin-bottom: 8px;
+    display: block;
+}
+
+/* 3. Ghost White Premium Buttons System */
+.btn-ghost-white {
+    display: inline-block;
+    background: transparent !important;
+    color: #ffffff !important;
+    border: 2px solid #ffffff !important;
+    padding: 12px 35px;
+    font-size: 15px;
+    font-weight: 600;
+    border-radius: 30px; /* Pill curved texture */
+    text-decoration: none !important;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+.btn-ghost-white:hover {
+    background-color: #ffffff !important;
+    color: #061626 !important; /* Inverts color cleanly on hover */
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.3);
+}
+
+/* 4. Form Text Field Overhaul on Dark Theme */
+.dark-theme-input {
+    width: 100%;
+    padding: 14px 16px;
+    background-color: rgba(255, 255, 255, 0.08) !important; /* Sleek translucent white input container */
+    color: #ffffff !important;
+    border: 1px solid rgba(255, 255, 255, 0.2) !important;
+    border-radius: 6px;
+    font-size: 14px;
+    box-sizing: border-box;
+    transition: all 0.2s ease;
+}
+
+.dark-theme-input::placeholder {
+    color: #cbd5e1 !important; /* Visible soft text placeholder */
+    opacity: 0.8;
+}
+
+.dark-theme-input:focus {
+    outline: none;
+    border-color: #00e5ff !important;
+    background-color: rgba(255, 255, 255, 0.15) !important;
+}
+
+/* ==================== 📱 SMART PHONE RESPONSIVE TRIMMING ==================== */
+@media (max-width: 768px) {
+    /* Completely removes right pane data on mobile screen views */
+    .home-contact-section-wrapper .wireframe-col-6:last-child {
+        display: none !important;
+    }
+    
+    .home-contact-section-wrapper .wireframe-col-6:first-child {
+        flex: 0 0 100% !important;
+        max-width: 100% !important;
+        width: 100% !important;
+        padding: 0 15px !important;
+    }
+    
+    .premium-deco-heading {
+        font-size: 28px;
+    }
+}
+
+/* Clean Footer Grid Engine */
+.footer-custom-row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+}
+
+.footer-custom-row .col-3 {
+    flex: 0 0 25%;
+    max-width: 25%;
+    padding: 0 15px;
+    box-sizing: border-box;
+}
+
+/* Responsive Footer Links */
+.footer-menu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-menu li {
+    margin-bottom: 10px;
+}
+
+.footer-menu li a {
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+.hero-desc {
+    color: #e2e8f0 !important; /* Soft white text */
+}
+.about-content h3, .about-content p {
+    color: #e2e8f0 !important;
+}
+.about-section h1.heading {
+    color: #ffffff !important;
+}
+#Hello\,_I\'m { /* Agar hello text par koi clear styling chahiye */
+    color: #a0aec0;
+}	
+}
